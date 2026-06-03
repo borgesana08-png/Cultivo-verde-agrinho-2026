@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultivo Correto - Agroforte e Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Cultivo Correto</h1>
+            <p>Projeto Agrinho: Agroforte e Sustentabilidade</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>O que é o Cultivo Correto?</h2>
+            <p>É o conjunto de práticas agrícolas que unem a alta produtividade do campo (Agroforte) com a preservação dos recursos naturais, garantindo o futuro das próximas gerações.</p>
+        </section>
+
+        <section class="pilares">
+            <h2>Pilares do Manejo Sustentável</h2>
+            <p>Clique nos botões abaixo para explorar as técnicas corretas:</p>
+            
+            <div class="tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'solo')">Manejo do Solo</button>
+                <button class="tab-btn" onclick="openTab(event, 'agua')">Uso da Água</button>
+                <button class="tab-btn" onclick="openTab(event, 'pragas')">Controle de Pragas</button>
+            </div>
+
+            <div id="solo" class="tab-content default-tab">
+                <h3>🌱 Solo Forte e Saudável</h3>
+                <p>O cultivo correto do solo evita a erosão e mantém os nutrientes através de técnicas como:</p>
+                <ul>
+                    <li><strong>Plantio Direto:</strong> Cultivo sobre a palhada da colheita anterior.</li>
+                    <li><strong>Rotação de Culturas:</strong> Alternar as espécies plantadas para não esgotar a terra.</li>
+                    <li><strong>Adubação Orgânica:</strong> Uso de compostagem e biofertilizantes.</li>
+                </ul>
+            </div>
+
+            <div id="agua" class="tab-content">
+                <h3>💧 Irrigação Inteligente</h3>
+                <p>A água é um recurso precioso. No agro sustentável, seu uso é otimizado:</p>
+                <ul>
+                    <li><strong>Gotejamento:</strong> Irrigação direto na raiz, evitando o desperdício por evaporação.</li>
+                    <li><strong>Captação de Chuva:</strong> Cisternas e bacias de retenção na propriedade.</li>
+                    <li><strong>Monitoramento de Umidade:</strong> Sensores que indicam o momento exato de irrigar.</li>
+                </ul>
+            </div>
+
+            <div id="pragas" class="tab-content">
+                <h3>🐞 Defesa Biológica</h3>
+                <p>Reduzir o impacto químico protege a biodiversidade e a saúde humana:</p>
+                <ul>
+                    <li><strong>Controle Biológico:</strong> Uso de inimigos naturais (insetos benéficos) para combater pragas.</li>
+                    <li><strong>MIP (Manejo Integrado de Pragas):</strong> Monitoramento constante antes da aplicação de qualquer defensivo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <h2>Sua propriedade é sustentável?</h2>
+            <p>Faça o teste rápido e descubra se você aplica o cultivo correto.</p>
+            <button id="btn-quiz" class="btn-primary">Verificar Práticas</button>
+            <div id="quiz-resultado" class="hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Agroforte e Sustentabilidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
